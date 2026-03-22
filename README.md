@@ -1,6 +1,9 @@
 # 🛡️ Bóveda de Respaldo: Arch Linux + Hyprland
-
 Este repositorio contiene mi configuración personal (rice) de Arch Linux "bien duro", incluyendo Hyprland, Waybar, Wofi, Kitty, Zsh y mis listas de paquetes.
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/852df2cd-6880-4156-9f49-ecbdcc2966f6" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/6d9e7b12-bdd1-4697-96ec-70ae799e5ee2" />
+
 
 ## 🚨 Manual del Fin del Mundo (Restauración desde cero)
 
