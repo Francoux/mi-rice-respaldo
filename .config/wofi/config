@@ -1,0 +1,10 @@
+[config]
+allow_images=true
+width=520
+height=550
+show=drun
+prompt=Search
+hide_scroll=true
+insensitive=true
+sort_order=alphabetical
+normal_window=true # To show the style correctly

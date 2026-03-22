@@ -1,0 +1,161 @@
+@import url('../../../.cache/wal/colors-waybar.css');
+
+/* ========================================
+    VARIABLES
+   ======================================== */
+@define-color text @color15;
+@define-color bg alpha(@background, 0.5);
+@define-color mycolor @color9;
+
+/* ========================================
+    GLOBAL STYLES
+   ======================================== */
+* {
+  outline: none;
+  font-family: "JetBrainsMono Nerd Font";
+}
+
+/* ========================================
+    CONTROL CENTER
+   ======================================== */
+.control-center {
+  background-color: @bg;
+  color: @text;
+  border-radius: 20px;
+  border: 2px solid alpha(@color9, 0.1);
+}
+
+.control-center .notification-row {
+  background-color: transparent;
+}
+
+.control-center .notification-group {
+    background-color: transparent;
+}
+
+/* ========================================
+    WIDGETS - TITLE
+   ======================================== */
+.widget-title {
+  padding: unset;
+  margin: unset;
+  color: @text;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+.widget-title > button {
+  padding: 0px 10px;
+  margin: unset;
+  margin-right: 20px;
+  margin-top: 3px;
+  font-size: initial;
+  color: @text;
+  text-shadow: none;
+  background: rgba(255, 85, 85, 0.3);
+  border: none;
+  box-shadow: none;
+  border-radius: 12px;
+  transition: all 0.7s ease;
+}
+
+.widget-title > button:hover {
+  border: none;
+  background: red/*rgba(255, 85, 85, 0.7)*/;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.65);
+  transition: all 0.7s ease;
+}
+
+/* ========================================
+    WIDGETS - LABEL
+   ======================================== */
+.widget-label {
+  margin: 8px;
+}
+
+.widget-label > label {
+  font-size: 1.1rem;
+}
+
+/* ========================================
+    WIDGETS - DO NOT DISTURB
+   ======================================== */
+.widget-dnd {
+  padding: 0 20px;
+  padding-top: 20px;
+  color: @text;
+}
+
+.widget-dnd > label {
+  color: @text;
+}
+
+.widget-dnd > switch {
+  background: alpha(@color1, 0.5);
+  border-radius: 8px;
+  box-shadow: none;
+  padding: 2px;
+}
+
+.widget-dnd > switch:hover {
+  background: @color4;
+}
+
+.widget-dnd > switch:checked {
+  background: @color9;
+}
+
+.widget-dnd > switch:checked:hover {
+  background: @color10;
+}
+
+.widget-dnd > switch slider {
+  background: @color14;
+  border-radius: 6px;
+}
+
+
+/* ========================================
+    WIDGETS - MENU AND TOP BAR
+   ======================================== */
+.widget-menubar > box > .menu-button-bar > button {
+  border: none;
+  background: transparent;
+}
+
+.topbar-buttons > button {
+  border: none;
+  background: transparent;
+}
+
+/* ========================================
+    SLIDER CONTROLS
+   ======================================== */
+trough {
+  border-radius: 20px;
+  background: transparent;
+  box-shadow: 0 0 5px alpha(@color4, 0.3);
+}
+
+trough highlight {
+  padding: 5px;
+  background: @mycolor;
+  border-radius: 20px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  transition: all 0.7s ease;
+  border: none;
+}
+
+trough highlight:hover {
+  padding: 5px;
+  background: @mycolor;
+  border-radius: 20px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
+  transition: all 0.7s ease;
+}
+
+trough slider {
+  background: transparent;
+  box-shadow: none;
+  border: none;
+}
